@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cloud Monitoring</title>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width = device-width, initial-scale = 1">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  </head>
+  <body>
+  <div><form>
+  API key:
+   <input id="key" name="Enter the key:" required><br>
+
+   ClientId:
+   
+   <div><input id="client_id" required><br>
+   Project name:
+   
+   <input id="project_name" required><br>
+   Metric:
+   
+   <input id="metric" required><br>
+   Instance Name:
+   
+   <input id="instance_name"  required><br>
+   Start Date:
+   
+   <input id="start_date"><br>
+   Start Time:
+   
+   <input id="start_time"><br>
+   End date:
+   
+   <input id="end_date"  required><br>
+   End Time:
+   
+   <input id="end_time"  required><br>
+   Zone:
+   
+   <input id="zone" required><br>
+   </form>
+   </div>
+
+
+  
+   
+   <button id="authorize-button" display="none">Authorize</button>
+   <button id="signout-button" display="none">Sign Out</button>
+
+   <div id="content"></div>
+  <canvas id="lineChart" height="100" width="400"></canvas>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.min.js"></script>
+   <script src="dom2apicall.js"></script> 
+  
+  
+ 
+  
+
+  </body>
+</html>
